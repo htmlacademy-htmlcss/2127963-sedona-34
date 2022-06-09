@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    background-color: #E5E5E5;
+    color: #333333;
+  } 
+
+  .navigation-link {
+    font-weight: 700;
+    text-align: left;
+    color: #000000;
+    text-decoration: none; 
+  }
+
+  .navigation-search-link {
+    text-decoration: none;
+  }
+
+  .button {
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .button-basic {
+    background-color: #756257;
+    color: #FFFFFF; 
+  }
+
+  .button-additional {
+    background-color: #83B3D3;
+    color: #FFFFFF;  
+  }
+  
+  .button-selected {
+    background-color: #7DB54F;
+    color: #FFFFFF;
+  }
+
+  .button-ranking {
+    background-color: #F2F2F2;
+    font-weight: 400;
+  }
+
+  .button-pagination-current {
+    background-color: #F2F2F2;
+    color: #000000;  
+  }
+
+  .page-header {
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  .main-index {
+    background-color: #FFFFFF;
+    background-position: 40px;
+  }
+
+  .welcome {
+  color: #000000;
+  background-image: url("../images/welcome/welcome_background.jpg");
+  width: 1200px;
+  height: 485px;
+  background-repeat: no-repeat;
+  }
