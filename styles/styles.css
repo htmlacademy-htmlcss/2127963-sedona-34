@@ -207,6 +207,71 @@ body {
   color: #000000;
 }
   
+.main-inner {
+  background-color: #FFFFFF;
+  width: 1200px;
+}
+
+.catalog-hotels {
+  background-image: url("../images/filter_background.jpg");
+  background-repeat: no-repeat;
+  background-color: #83B3D3;
+  width: 1200px;
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.catalog-filter-group legend {
+  font-weight: 700;
+}
+
+.control {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.range-wrapper-inputs {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.range-input {
+  color: #FFFFFF;
+  background-color: transparent;
+}
+
+.catalog-filter-label {
+  text-align: right;
+}
+
+.button-apply {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.button-reset {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  text-transform: none;
+  background-color: transparent;
+  color: #FFFFFF;
+}
 
 
   
