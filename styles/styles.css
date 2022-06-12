@@ -166,13 +166,16 @@ body {
   }
 
 .newsletter {
-  background-image: url("../images/newsletter_background.jpg");
-  background-color: #83B3D3;
   width: 1200px;
   height: 411px;
-  color: #FFFFFF;
   font-size: 22px;
   text-align: center;
+}
+
+.newsletter-index {
+  background-image: url("../images/newsletter_background.jpg");
+  background-color: #83B3D3;
+  color: #FFFFFF;
 }
   
 .page-footer-title {
@@ -188,6 +191,7 @@ body {
 
 .field {
   font-size: 18px;
+  background-color: #F2F2F2;
 }
 
 .page-footer {
@@ -273,5 +277,56 @@ body {
   color: #FFFFFF;
 }
 
+.catalog-result-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
 
+.select-control {
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #FFFFFF;
+}
+
+.button-view {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.hotel-card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-card-price {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-ranking {
+  font-size: 16px;
+  line-height: 21px;
+  width: 160px;
+  height: 37px;
+}
+
+.hotels-amount {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.button-hotels-amount {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.footer-title-inner {
+  color: #000000;
+}
   
