@@ -38,6 +38,10 @@ body {
   flex-grow: 1;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .navigation-link {
   font-weight: 700;
   text-align: left;
