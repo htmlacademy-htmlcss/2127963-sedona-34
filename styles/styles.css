@@ -1,83 +1,97 @@
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/ptsans-400.woff2") format("woff2");
-    font-display: swap;
-  }
-  
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
 @font-face {
-    font-family: "PT Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/ptsans-700.woff2") format("woff2");
-    font-display: swap;
-  }
-  
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
 body {
-    font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    line-height: 26px;
-    background-color: #E5E5E5;
-    width: 1280px;
-    height: 3315px;
-    color: #333333;
-  } 
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  background-color: #E5E5E5;
+  color: #333333;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 
 .navigation-link {
-    font-weight: 700;
-    text-align: left;
-    color: #000000;
-    text-decoration: none; 
-  }
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
 
 .button {
-    font-family: inherit;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 700;
-  }
-  
+  font-family: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+}
+
 .button-basic {
-    background-color: #756257;
-    color: #FFFFFF; 
-  }
+  background-color: #756257;
+  color: #FFFFFF;
+}
 
 .button-additional {
-    background-color: #83B3D3;
-    color: #FFFFFF;  
-  }
-  
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
+
 .button-selected {
-    background-color: #7DB54F;
-    color: #FFFFFF;
-  }
+  background-color: #7DB54F;
+  color: #FFFFFF;
+}
 
 .button-ranking {
-    background-color: #F2F2F2;
-    font-weight: 400;
-  }
+  background-color: #F2F2F2;
+  font-weight: 400;
+}
 
 .button-pagination-current {
-    background-color: #F2F2F2;
-    color: #000000;  
-  }
+  background-color: #F2F2F2;
+  color: #000000;
+}
 
 .search-button {
-    line-height: 36px;
-  }
+  line-height: 36px;
+}
 
 .page-header {
-    color: #000000;
-    background-color: #FFFFFF;
-    width: 1200px;
-  }
+  color: #000000;
+  background-color: #FFFFFF;
+  width: 1200px;
+}
 
 .main-index {
-    background-color: #FFFFFF;
-    width: 1200px;
-  }
+  background-color: #FFFFFF;
+  width: 1200px;
+}
 
 .welcome {
   color: #000000;
@@ -86,84 +100,84 @@ body {
   height: 485px;
   background-repeat: no-repeat;
   background-color: rgba(131, 179, 211, 0.12);
-  }
+}
 
 .description {
-    text-align: center;
-  }
+  text-align: center;
+}
 
 .description-title {
-    color: #000000;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-  }
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
 
 .description-advantages {
-    font-size: 22px;
-    line-height: 36px;
-  }
+  font-size: 22px;
+  line-height: 36px;
+}
 
 .advantages-items {
-    width: 400px;
-    height: 384px;
-    background-color: rgba(131, 179, 211, 0.12);
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-  }
+  width: 400px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
 
 .advantages-title {
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
-       
-  }
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+}
 
 .advantages-town .advantages-title {
-    color: #FFFFFF;
-  }
+  color: #FFFFFF;
+}
 
 .advantages-town {
-    background-color: #83B3D3;
-    color: #FFFFFF;
-  }
-  
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
+
 .advantages-bridge .advantages-title {
-    color: #FFFFFF;
-  }
+  color: #FFFFFF;
+}
 
 .advantages-bridge {
-    background-color: #83B3D3;
-    color: #FFFFFF;
-  }
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
 
 .advantages-road {
-    background-color: rgba(131, 179, 211, 0.2);
-  }
+  background-color: rgba(131, 179, 211, 0.2);
+}
 
 .advantages-nested-eating {
-    background-color: #FFFFFF;
-  }
+  background-color: #FFFFFF;
+}
 
 .search {
-    text-align: center;
-  }
+  text-align: center;
+}
 
 .search-title {
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: #000000;
-  }
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
 
 .search-basic {
-    font-size: 22px;
-  }
+  font-size: 22px;
+}
 
 .newsletter {
   width: 1200px;
@@ -177,7 +191,7 @@ body {
   background-color: #83B3D3;
   color: #FFFFFF;
 }
-  
+
 .page-footer-title {
   font-weight: 700;
   font-size: 30px;
@@ -198,11 +212,12 @@ body {
   background-color: #FFFFFF;
   width: 1200px;
 }
+
 .footer-social-link {
   color: inherit;
 }
 
- .footer-contacts-phone {
+.footer-contacts-phone {
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -210,7 +225,7 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
-  
+
 .main-inner {
   background-color: #FFFFFF;
   width: 1200px;
@@ -329,4 +344,3 @@ body {
 .footer-title-inner {
   color: #000000;
 }
-  
