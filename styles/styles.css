@@ -343,6 +343,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .breadcrumbs {
@@ -355,8 +356,19 @@ body {
   text-decoration: none;
 }
 
+.catalog-filter {
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+}
+
 .catalog-filter-group legend {
   font-weight: 700;
+}
+
+.catalog-results {
+  width: 1057px;
+  margin: 0 auto;
 }
 
 .control {
