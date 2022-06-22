@@ -84,6 +84,12 @@ body {
 
 .button-search {
   line-height: 36px;
+  display: block;
+  box-sizing: border-box;
+  width: 575px;
+  margin: 0 auto;
+  padding: 15px;
+
 }
 
 .button-newsletter {
@@ -113,7 +119,6 @@ body {
   font-size: 16px;
   line-height: 21px;
   width: 160px;
-  height: 37px;
 }
 
 .button-hotels-amount {
@@ -129,6 +134,7 @@ body {
 
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
 }
@@ -158,7 +164,6 @@ body {
   color: #000000;
   background-image: url("../images/welcome/welcome_divider.svg"), url("../images/welcome/welcome_background.jpg");
   width: 1200px;
-  height: 485px;
   background-position: bottom, 0 0;
   background-repeat: no-repeat;
   background-color: rgba(131, 179, 211, 0.12);
@@ -167,10 +172,15 @@ body {
 .welcome-image {
   display: block;
   margin: 0 auto;
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .description {
   text-align: center;
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .description-title {
@@ -179,10 +189,9 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  width: 720px;
   margin: 0 auto;
-  margin-bottom: 25px;
-  padding-top: 60px;
+  margin-bottom: 31px;
+  padding-top: 63px;
 }
 
 .description-advantages {
@@ -203,11 +212,13 @@ body {
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages-items {
-  width: 400px;
-  height: 384px;
+  width: 250px;
+  margin: 0 auto;
+  padding: 98px 75px 108px;
   background-color: rgba(131, 179, 211, 0.12);
   font-size: 18px;
   line-height: 21px;
@@ -215,15 +226,26 @@ body {
 }
 
 .advantages-description {
-  width: 250px;
   margin: 0 auto;
 }
 
-.advantages-town .advantages-description {
-  width: 220px;
+.advantages-nested .advantages-description {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.advantages-bridge .advantages-description {
+.advantages-description-number {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.advantages-nested {
+  padding-top: 184px;
+  padding-bottom: 79px;
+}
+
+
+.advantages-town .advantages-description {
   width: 220px;
 }
 
@@ -233,21 +255,31 @@ body {
 }
 
 .advantages-title {
+  width: 180px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 29px;
+
+}
+
+.advantages-nested .advantages-title {
+  margin-bottom: 20px;
 }
 
 .advantages-town .advantages-title {
   color: #FFFFFF;
+  margin-bottom: 30px;
 }
 
 .advantages-town {
   background-color: #83B3D3;
   color: #FFFFFF;
+  width: 220px;
+  padding: 97px 90px 87px;
 }
 
 .advantages-bridge .advantages-title {
@@ -257,6 +289,8 @@ body {
 .advantages-bridge {
   background-color: #83B3D3;
   color: #FFFFFF;
+  width: 220px;
+  padding: 98px 90px 87px;
 }
 
 .advantages-road {
@@ -269,6 +303,9 @@ body {
 
 .search {
   text-align: center;
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 93px;
 }
 
 .search-title {
@@ -277,30 +314,45 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding-top: 91px;
+  margin-bottom: 29px;
 }
 
 .search-basic {
   font-size: 22px;
+  margin: 0;
+  margin-bottom: 56px;
 }
 
 .newsletter {
-  width: 1200px;
-  height: 411px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 94px 200px;
   font-size: 22px;
   text-align: center;
 }
 
 .newsletter-index {
   background-image: url("../images/newsletter_background.jpg");
+  background-repeat: no-repeat;
   background-color: #83B3D3;
   color: #FFFFFF;
 }
 
 .page-footer-title {
+  margin: 0;
+  margin-bottom: 29px;
+
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.newsletter-description {
+  margin: 0;
+  margin-bottom: 46px;
 }
 
 .field {
@@ -358,8 +410,15 @@ body {
 
 .catalog-filter {
   display: flex;
+  flex-wrap: wrap;
   width: 1057px;
   margin: 0 auto;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .catalog-filter-group legend {
@@ -428,6 +487,7 @@ body {
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   width: 1056px;
   margin: 0 auto;
   justify-content: center;
