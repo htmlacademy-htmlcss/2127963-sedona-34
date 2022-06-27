@@ -141,8 +141,12 @@ body {
   padding-top: 17px;
   padding-bottom: 17px;
   margin: 0 auto;
-  margin-bottom: 60px;
 
+
+}
+
+.hotel-card-more {
+  margin-bottom: 60px;
 }
 
 .page-header {
@@ -626,14 +630,13 @@ body {
 .paginaion-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .pagination-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 55px;
-  height: 55px;
   background-color: #83B3D3;
 }
 
@@ -643,4 +646,12 @@ body {
 
 .pagination-item-current {
   background-color: #F2F2F2;
+}
+
+.pagination-link {
+  width: 55px;
+  height: 55px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  box-sizing: border-box;
 }
