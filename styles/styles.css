@@ -59,6 +59,8 @@ body {
   text-decoration: none;
   text-align: center;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button-basic {
@@ -74,11 +76,6 @@ body {
 .button-selected {
   background-color: #7DB54F;
   color: #FFFFFF;
-}
-
-.button-ranking {
-  background-color: #F2F2F2;
-  font-weight: 400;
 }
 
 .button-pagination-current {
@@ -98,16 +95,10 @@ body {
 
 .button-newsletter {
   font-size: 20px;
-}
-
-.button-apply {
-  font-size: 16px;
-  line-height: 21px;
+  line-height: 36px;
 }
 
 .button-reset {
-  font-size: 18px;
-  line-height: 23px;
   font-weight: 400;
   text-transform: none;
   background-color: transparent;
@@ -125,9 +116,8 @@ body {
 }
 
 .button-ranking {
-  font-size: 16px;
-  line-height: 21px;
-  width: 160px;
+  background-color: #F2F2F2;
+  font-weight: 400;
 }
 
 .button-hotels-amount {
@@ -135,18 +125,9 @@ body {
   line-height: 23px;
 }
 
-.button-more {
-  display: block;
-  width: 620px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  margin: 0 auto;
-
-
-}
-
-.hotel-card-more {
-  margin-bottom: 60px;
+.button.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .page-header {
@@ -416,6 +397,7 @@ body {
 
 .field {
   font-size: 18px;
+  line-height: 21px;
   background-color: #F2F2F2;
 }
 
@@ -546,13 +528,14 @@ body {
 }
 
 .catalog-results {
-  width: 1057px;
+  width: 1056px;
   margin: 0 auto;
-  padding-top: 44px;
+  padding-top: 57px;
 }
 
 .results-sorting-container {
   display: flex;
+  margin-bottom: 60px;
 
 }
 
@@ -568,7 +551,7 @@ body {
 
 .range-wrapper-inputs {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 21px;
 }
 
 .range-input {
@@ -583,7 +566,7 @@ body {
 .catalog-result-title {
   font-weight: 700;
   font-size: 30px;
-  line-height: 39px;
+  line-height: 36px;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
@@ -597,7 +580,7 @@ body {
 
 .select-control {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 21px;
   background-color: #FFFFFF;
 }
 
@@ -606,11 +589,11 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 0 18px;
   justify-items: center;
-
   margin: 0;
+
   padding: 0;
   list-style-type: none;
-  margin-bottom: 64px;
+  margin-bottom: 66px;
 }
 
 .hotel-card {
@@ -618,16 +601,22 @@ body {
 }
 
 .hotel-card-link {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 31px;
+
   color: #000000;
   text-decoration: none;
+
+}
+
+.hotel-card-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
 }
 
 .hotel-card-price {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 21px;
 }
 
 .hotels-amount {
