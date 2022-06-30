@@ -115,10 +115,18 @@ body {
   margin-right: 0;
 }
 
+.hotel-card-button {
+padding-top: 9px;
+padding-bottom: 8px;
+}
+
 .button-ranking {
   background-color: #F2F2F2;
   font-weight: 400;
+  grid-area: ranking;
 }
+
+
 
 .button-hotels-amount {
   font-size: 18px;
@@ -156,7 +164,6 @@ body {
   display: block;
   padding: 20px 17px 19px;
   font-weight: 700;
-
   color: #000000;
   text-decoration: none;
 }
@@ -164,19 +171,27 @@ body {
 .navigation-search .navigation-link {
   min-width: 18px;
   min-height: 18px;
+  padding: 9px 15px 8px;
 }
 
 .navigation-link.button-basic {
   color: #FFFFFF;
+  min-width: 130px;
 }
 
 .navigation-search {
   max-width: 310px;
   margin-left: auto;
+  padding-top: 14px;
 }
 
+.navigation-favourites {
+  margin-left: auto;
+}
+
+
 .page-header-logo {
-  margin-right: 47px;
+  margin-right: 30px;
 }
 
 .main-index {
@@ -587,10 +602,10 @@ body {
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0 18px;
+  column-gap: 18px;
+  row-gap: 0;
   justify-items: center;
   margin: 0;
-
   padding: 0;
   list-style-type: none;
   margin-bottom: 66px;
@@ -598,6 +613,34 @@ body {
 
 .hotel-card {
   padding: 20px;
+}
+
+.hotel-card-container {
+display: grid;
+grid-template-areas:
+"price price"
+"more favourite"
+". ranking";
+row-gap: 16px;
+column-gap: 20px;
+}
+
+.hotel-card-image {
+  margin-bottom: 16px;
+}
+
+.hotel-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  grid-area: price;
+}
+
+.button-more {
+  grid-area: more;
+}
+
+.button-favourite {
+  grid-area: favourite;
 }
 
 .hotel-card-link {
@@ -609,15 +652,13 @@ body {
 
 .hotel-card-title {
   margin: 0;
+  margin-bottom: 16px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
 }
 
-.hotel-card-price {
-  font-size: 18px;
-  line-height: 21px;
-}
+
 
 .hotels-amount {
   font-size: 18px;
