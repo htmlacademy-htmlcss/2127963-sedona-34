@@ -181,14 +181,23 @@ padding-bottom: 8px;
 
 .navigation-search {
   max-width: 310px;
+  min-width: 252px;
   margin-left: auto;
   padding-top: 14px;
+  justify-content: flex-end;
 }
 
-.navigation-favourites {
-  margin-left: auto;
+.navigation-item-favourite .navigation-link {
+  background-image: url(../images/interface/heart.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
+.navigation-item-search .navigation-link {
+  background-image: url(../images/interface/search.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 
 .page-header-logo {
   margin-right: 30px;
