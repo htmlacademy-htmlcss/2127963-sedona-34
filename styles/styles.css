@@ -173,9 +173,9 @@ body {
 
 .navigation-link {
   display: block;
-  padding: 20px 17px;
+  padding: 20px 17px 19px;
   font-weight: 700;
-  text-align: left;
+
   color: #000000;
   text-decoration: none;
 }
@@ -195,7 +195,7 @@ body {
 }
 
 .page-header-logo {
-  margin-right: 30px;
+  margin-right: 47px;
 }
 
 .main-index {
@@ -223,7 +223,7 @@ body {
   text-align: center;
   width: 720px;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 90px;
   padding-top: 63px;
 }
 
@@ -259,9 +259,9 @@ body {
 }
 
 .advantages-items {
-  width: 250px;
+  width: 230px;
   margin: 0 auto;
-  padding: 98px 75px 108px;
+  padding: 103px 85px 102px;
   background-color: rgba(131, 179, 211, 0.12);
   font-size: 18px;
   line-height: 21px;
@@ -272,10 +272,7 @@ body {
   margin: 0 auto;
 }
 
-.advantages-nested .advantages-description {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+
 
 .advantages-description-number {
   margin: 0 auto;
@@ -283,13 +280,8 @@ body {
 }
 
 .advantages-nested {
-  padding-top: 184px;
-  padding-bottom: 79px;
-}
-
-
-.advantages-town .advantages-description {
-  width: 220px;
+  padding-top: 182px;
+  padding-bottom: 81px;
 }
 
 .advantages-container {
@@ -305,12 +297,8 @@ body {
   color: #000000;
   text-transform: uppercase;
   margin: 0 auto;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 
-}
-
-.advantages-nested .advantages-title {
-  margin-bottom: 20px;
 }
 
 .advantages-town .advantages-title {
@@ -321,8 +309,8 @@ body {
 .advantages-town {
   background-color: #83B3D3;
   color: #FFFFFF;
-  width: 220px;
-  padding: 97px 90px 87px;
+
+  padding: 92px 85px;
 }
 
 .advantages-bridge .advantages-title {
@@ -332,17 +320,35 @@ body {
 .advantages-bridge {
   background-color: #83B3D3;
   color: #FFFFFF;
-  width: 220px;
-  padding: 98px 90px 87px;
+
+  padding: 92px 85px;
 }
 
 .advantages-road {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.advantages-nested-housing {
+  background-image: url("../images/advantage_icon/housing.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 80px;
+}
+
 .advantages-nested-eating {
   background-color: #FFFFFF;
+  background-image: url("../images/advantage_icon/eating.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 81px;
+
 }
+
+.advantages-nested-souvenir {
+  background-image: url("../images/advantage_icon/souvenir.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 78px;
+}
+
+
 
 .search {
   text-align: center;
@@ -434,7 +440,7 @@ body {
 .footer-contacts-container {
   display: flex;
   flex-wrap: wrap;
-  width: 1056px;
+  width: 1060px;
   margin: 0 auto;
   padding-top: 40px;
   justify-content: center;
@@ -596,10 +602,19 @@ body {
 }
 
 .hotel-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 18px;
+  justify-items: center;
+
   margin: 0;
   padding: 0;
   list-style-type: none;
   margin-bottom: 64px;
+}
+
+.hotel-card {
+  padding: 20px;
 }
 
 .hotel-card-link {
@@ -649,9 +664,9 @@ body {
 }
 
 .pagination-link {
-  width: 55px;
-  height: 55px;
-  padding-top: 17px;
-  padding-bottom: 17px;
+  width: 60px;
+  height: 60px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   box-sizing: border-box;
 }
