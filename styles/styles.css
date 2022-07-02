@@ -157,6 +157,11 @@ body {
   line-height: 36px;
 }
 
+.image {
+  object-fit: contain;
+  max-width: 100%;
+}
+
 .page-header {
   color: #000000;
   background-color: #FFFFFF;
