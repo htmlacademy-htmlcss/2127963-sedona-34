@@ -223,8 +223,14 @@ body {
   background-position: 50% 50%;
 }
 
+.navigation-favourites {
+  margin-left: auto;
+}
+
 .page-header-logo {
   margin-right: 30px;
+  margin-bottom: -5px;
+  z-index: 1;
 }
 
 .main-index {
