@@ -54,6 +54,7 @@ body {
 }
 
 .button {
+  display: inline-block;
   font-family: inherit;
   text-transform: uppercase;
   text-decoration: none;
@@ -62,6 +63,9 @@ body {
   font-size: 16px;
   line-height: 20px;
   border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 9px 15px 8px;
 }
 
 .button-basic {
@@ -181,7 +185,7 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 520px;
+  max-width: 520px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -201,15 +205,17 @@ body {
   text-decoration-thickness: 2px;
   text-decoration-color: #756257;
 }
+
 .navigation-search .navigation-link {
   min-width: 18px;
   min-height: 18px;
-  padding: 9px 15px 8px;
+  padding: 9px 11px 8px;
 }
 
 .navigation-link.button-basic {
   color: #FFFFFF;
   min-width: 130px;
+  padding: 9px 15px 8px;
 }
 
 .navigation-search {
@@ -217,19 +223,22 @@ body {
   min-width: 252px;
   margin-left: auto;
   padding-top: 14px;
+  padding-bottom: 14px;
   justify-content: flex-end;
 }
 
-.navigation-item-favourite .navigation-link {
+.navigation-item-favourite {
   background-image: url(../images/interface/heart.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: 18px 17px;
 }
 
-.navigation-item-search .navigation-link {
+.navigation-item-search {
   background-image: url(../images/interface/search.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: 18px 18px;
 }
 
 .navigation-favourites {
@@ -483,15 +492,26 @@ body {
 }
 
 .footer-social {
-  min-width: 192px;
+  max-width: 192px;
   margin-right: auto;
 }
 
 .footer-social-link {
+  position: relative;
   display: block;
   color: inherit;
   width: 47px;
   height: 40px;
+}
+
+.footer-social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
 }
 
 .footer-social-list {
@@ -509,24 +529,6 @@ body {
 
 .footer-social-item:nth-child(3n) {
   margin-right: 0;
-}
-
-.footer-social-vk {
-  background-image: url("../images/social/vk.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.footer-social-telegram {
-  background-image: url("../images/social/telegram.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-
-.footer-social-youtube {
-  background-image: url("../images/social/youtube.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 .footer-phone {
