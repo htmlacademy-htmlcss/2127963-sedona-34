@@ -52,7 +52,9 @@
           </li>
         </ul>
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="filter-left">
           <fieldset class="catalog-filter-group filter-infrastructure">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
@@ -99,6 +101,8 @@
               </li>
             </ul>
           </fieldset>
+        </div>
+        <div class="filter-right">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
             <div class="range">
@@ -131,6 +135,7 @@
               <button class="button button-reset" type="submit">Сбросить</button>
 
           </fieldset>
+        </div>
         </form>
       </section>
       <section class="catalog-results">
@@ -274,7 +279,7 @@
       <div class="footer-container">
         <section class="newsletter newsletter-inner">
           <h2 class="page-footer-title footer-title-inner">Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама, <br>
+          <p class="newsletter-description">Только полезная информация и никакого спама, <br>
             честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email" class="visually-hidden">Email</label>
@@ -285,7 +290,7 @@
         </section>
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="footer-contacts-container">
+
             <section class="footer-social">
               <h3 class="page-footer-title visually-hidden">Социальные сети</h3>
               <ul class="footer-social-list">
@@ -324,7 +329,7 @@
               <a href="https://htmlacademy.ru/"><img class="page-footer-logo image" src="images/logo/html_academy.svg"
                   width="115" height="33" alt="Логотип HTML Academy"></a>
             </section>
-          </div>
+
         </section>
       </div>
     </footer>

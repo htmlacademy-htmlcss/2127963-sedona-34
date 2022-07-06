@@ -69,7 +69,7 @@ body {
 }
 
 .button-basic {
-  background-color: #756257;
+  background-color: #756157;
   color: #FFFFFF;
 }
 
@@ -89,18 +89,23 @@ body {
 }
 
 .button-search {
+  font-size: 20px;
   line-height: 36px;
   display: block;
   box-sizing: border-box;
-  width: 575px;
+  width: 574px;
   margin: 0 auto;
-  padding: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 
 }
 
 .button-newsletter {
   font-size: 20px;
   line-height: 36px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 0 10px 10px 0;
 }
 
 .button-reset {
@@ -112,18 +117,27 @@ body {
 
 .button-apply {
   margin-bottom: 6px;
-  box-sizing: border-box;
-  width: 160px;
 }
 
 .filter-buttons .button {
   padding: 14px 15px;
+  box-sizing: border-box;
+  width: 160px;
 }
 
 .button-view {
+  box-sizing: border-box;
+  width: 36px;
+  height: 36px;
   color: #000000;
   background-color: #FFFFFF;
+  padding: 14px 16px;
   margin-right: 8px;
+  border: 2px solid #E5E5E5;
+}
+
+.button-active {
+  border: 2px solid #000000;
 }
 
 .button-view-cards {
@@ -146,11 +160,6 @@ body {
 
 .button-view:last-child {
   margin-right: 0;
-}
-
-.hotel-card-button {
-  padding-top: 9px;
-  padding-bottom: 8px;
 }
 
 .button-ranking {
@@ -317,10 +326,18 @@ body {
   width: 230px;
   margin: 0 auto;
   padding: 103px 85px 102px;
-  background-color: rgba(131, 179, 211, 0.12);
+
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+}
+
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-nested {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-description {
@@ -386,6 +403,9 @@ body {
 
 .advantages-road {
   background-color: rgba(131, 179, 211, 0.2);
+  padding-right: 84px;
+  padding-left: 84px;
+  width: 232px;
 }
 
 .advantages-nested-housing {
@@ -410,10 +430,10 @@ body {
 
 .search {
   text-align: center;
-  width: 720px;
+  width: 592px;
   margin: 0 auto;
-  margin-bottom: 93px;
-  padding-top: 91px;
+
+  padding: 91px 304px 93px;
 }
 
 .search-title {
@@ -439,7 +459,6 @@ body {
 
 .footer-container {
   margin: 0 auto;
-  margin-bottom: 40px;
 }
 
 .newsletter {
@@ -485,18 +504,20 @@ body {
   padding-top: 20px;
   padding-bottom: 19px;
   padding-left: 22px;
+  border: none;
+  border-radius: 10px 0 0 10px;
 }
 
 .footer-title-inner {
   color: #000000;
 }
 
-.footer-contacts-container {
+.footer-contacts {
   display: flex;
   flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 45px 70px 35px;
   justify-content: center;
 }
 
@@ -568,9 +589,10 @@ body {
   background-image: url("../images/filter_background.jpg");
   background-repeat: no-repeat;
   background-color: #82B3D3;
-  width: 1057px;
+  width: 1060px;
   margin: 0 auto;
-  padding: 35px 72px 83px 71px;
+  margin-bottom: 5px;
+  padding: 35px 70px 70px 70px;
   color: #FFFFFF;
 }
 
@@ -579,13 +601,13 @@ body {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .breadcrumbs {
   display: flex;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   padding: 0;
   list-style-type: none;
   font-size: 16px;
@@ -599,19 +621,21 @@ body {
 }
 
 .catalog-filter {
-  display: flex;
-  justify-content: space-between;
-
-  width: 1057px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
 }
 
-.filter-infrastructure {
-  margin-right: 67px;
+.filter-left {
+  display: flex;
 }
 
-.filter-accommodation {
-  margin-right: 167px;
+.filter-right  {
+  display: flex;
+}
+
+.filter-infrastructure {
+  margin-right: 70px;
 }
 
 .catalog-filter-list {
@@ -635,7 +659,7 @@ body {
 .filter-buttons {
   display: grid;
   margin-left: auto;
-  min-width: 130px;
+  min-width: 160px;
   align-self: flex-end;
 }
 
@@ -658,7 +682,11 @@ body {
 
 .control {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 21px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .range-wrapper-inputs {
@@ -683,11 +711,6 @@ body {
   color: #000000;
   margin: 0;
   margin-right: 192px;
-}
-
-.results-sorting-container .button {
-  width: 48px;
-  height: 48px;
 }
 
 .select-control {
@@ -765,6 +788,9 @@ body {
 .button-hotels-amount {
   margin-left: auto;
   background-color: #FFFFFF;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
 }
 
 .pagination {
@@ -778,6 +804,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border-top: 1px solid #E6E6E6;
 }
 
 .pagination-item {
