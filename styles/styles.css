@@ -739,6 +739,16 @@ body {
   min-height: 21px;
 }
 
+.breadcrumbs-item:not(:last-child) {
+  position: relative;
+  margin-right: 10px;
+  padding-right: 15px;
+  background-image: url("../images/interface/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position-x: 30px;
+  background-position-y: center;
+}
+
 .breadcrumbs-icon {
   position: absolute;
   top: 0;
