@@ -66,6 +66,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 9px 15px 8px;
+  box-sizing: border-box;
 }
 
 .button-basic {
@@ -92,7 +93,6 @@ body {
   font-size: 20px;
   line-height: 36px;
   display: block;
-  box-sizing: border-box;
   width: 574px;
   margin: 0 auto;
   padding-top: 12px;
@@ -121,12 +121,10 @@ body {
 
 .filter-buttons .button {
   padding: 14px 15px;
-  box-sizing: border-box;
   width: 160px;
 }
 
 .button-view {
-  box-sizing: border-box;
   width: 36px;
   height: 36px;
   color: #000000;
@@ -215,17 +213,11 @@ body {
   text-decoration-color: #756257;
 }
 
-.navigation-search .navigation-link {
-  min-width: 18px;
-  min-height: 18px;
-  padding: 9px 11px 8px;
-}
-
 .navigation-link.button-basic {
   color: #FFFFFF;
-  min-width: 130px;
-  padding-left: 15px;
-  padding-right: 15px;
+  min-width: 160px;
+  padding: 9px 15px 8px;
+
 }
 
 .navigation-search {
@@ -237,18 +229,24 @@ body {
   justify-content: flex-end;
 }
 
-.navigation-item-favourite {
-  background-image: url(../images/interface/heart.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 18px 17px;
+.navigation-search .navigation-item:not(:last-child) {
+  width: 34px;
+  height: 36px;
+  margin-right: 8px;
 }
 
-.navigation-item-search {
-  background-image: url(../images/interface/search.svg);
+.navigation-search .navigation-link {
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: 18px 18px;
+}
+
+.navigation-item-search .navigation-link {
+  background-image: url(../images/interface/search.svg);
+}
+
+.navigation-item-favourite .navigation-link {
+  background-image: url(../images/interface/heart.svg);
 }
 
 .navigation-favourites {
