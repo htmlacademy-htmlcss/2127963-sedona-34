@@ -158,6 +158,20 @@ body {
   color: #FFFFFF;
 }
 
+.button-reset:hover {
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  border: 3px solid #83B3D3;
+}
+
+.button-reset:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
 .button-apply {
   margin-bottom: 6px;
 }
@@ -607,6 +621,19 @@ body {
   fill: #83B3D3;
 }
 
+.footer-social-icon:hover {
+  fill: #68A2CA;
+}
+
+.footer-social-icon:focus {
+  fill: #68A2CA;
+}
+
+.footer-social-icon:active {
+  fill: #68A2CA;
+  opacity: 30%;
+}
+
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
@@ -638,9 +665,35 @@ body {
   text-decoration: none;
 }
 
-.htmlacademy-link {
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: #756157;
+  opacity: 30%;
+}
+
+.footer-htmlacademy {
   width: 120px;
   margin-left: auto;
+}
+
+.html-logo:hover {
+  fill: #756157;
+}
+
+.html-logo:focus {
+  fill: #756157;
+}
+
+.html-logo:active {
+  fill: #756157;
+  opacity: 30%;
 }
 
 .main-inner {
@@ -683,7 +736,7 @@ body {
   color: inherit;
   text-decoration: none;
   min-width: 21px;
-min-height: 21px;
+  min-height: 21px;
 }
 
 .breadcrumbs-icon {
@@ -706,7 +759,7 @@ min-height: 21px;
   display: flex;
 }
 
-.filter-right  {
+.filter-right {
   display: flex;
 }
 
