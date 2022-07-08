@@ -761,6 +761,15 @@ body {
   min-height: 21px;
 }
 
+.breadcrumbs-link:hover {
+  opacity: 60%;
+}
+
+
+.breadcrumbs-link:active {
+  opacity: 30%;
+}
+
 .breadcrumbs-item:not(:last-child) {
   position: relative;
   margin-right: 10px;
