@@ -838,6 +838,15 @@ body {
   list-style-type: none;
 }
 
+.catalog-filter-item {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
 .catalog-filter-title {
   margin-bottom: 30px;
 }
@@ -935,10 +944,6 @@ body {
 .control {
   font-size: 18px;
   line-height: 21px;
-}
-
-.catalog-filter-item:not(:last-child) {
-  margin-bottom: 15px;
 }
 
 .catalog-filter-label {
