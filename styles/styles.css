@@ -149,6 +149,8 @@ body {
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 0 10px 10px 0;
+  width: 200px;
+  height: 60px;
 }
 
 .button-reset {
@@ -179,6 +181,7 @@ body {
 .filter-buttons .button {
   padding: 14px 15px;
   width: 160px;
+  height: 48px;
 }
 
 .button-view {
@@ -577,7 +580,6 @@ body {
 
 .newsletter-form {
   display: grid;
-  min-width: 800px;
   grid-template-columns: 3fr 1fr;
 }
 
@@ -597,14 +599,36 @@ body {
 }
 
 .field {
+  box-sizing: border-box;
+  width: 600px;
+  height: 60px;
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
-  padding-top: 20px;
-  padding-bottom: 19px;
-  padding-left: 22px;
+  padding: 20px 22px 19px;
   border: none;
   border-radius: 10px 0 0 10px;
+}
+
+.field::placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.field:hover {
+  background-color: #E6E6E6;
+}
+
+.field:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+
+}
+
+.field:active {
+  background-color: #FFFFFF;
+  border: 2px solid #000000;
+  color: #000000;
 }
 
 .footer-title-inner {
@@ -818,12 +842,70 @@ body {
   margin-bottom: 30px;
 }
 
+.filter-right .catalog-filter-title {
+  margin-bottom: 34px;
+}
+
 .catalog-filter-group {
   padding: 0;
+  border: none;
 }
 
 .catalog-filter-group legend {
   font-weight: 700;
+}
+
+/* Range */
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #FFFFFF;
+  opacity: 0.3;
+}
+
+.range-wrapper-inputs {
+  display: grid;
+  grid-template-columns: 143px 144px;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+}
+
+.range-input {
+  color: #FFFFFF;
+  background-color: transparent;
+  -moz-appearance: textfield;
+  padding: 14px 19px 13px;
+  height: 48px;
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
+}
+
+.range-input:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.range-input:nth-of-type(2) {
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.range-input:focus {
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+}
+
+.range-input:active {
+  background: #756257;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .filter-buttons {
@@ -857,16 +939,6 @@ body {
 
 .catalog-filter-item:not(:last-child) {
   margin-bottom: 15px;
-}
-
-.range-wrapper-inputs {
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.range-input {
-  color: #FFFFFF;
-  background-color: transparent;
 }
 
 .catalog-filter-label {
