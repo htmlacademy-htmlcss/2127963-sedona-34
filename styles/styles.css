@@ -154,11 +154,18 @@ body {
   height: 60px;
 }
 
+.filter-buttons .button {
+  width: 160px;
+}
+
 .button-reset {
   font-weight: 400;
   text-transform: none;
   background-color: transparent;
   color: #FFFFFF;
+  height: 37px;
+  padding-top: 4px;
+  padding-bottom: 5px;
 }
 
 .button-reset:hover {
@@ -177,17 +184,14 @@ body {
 
 .button-apply {
   margin-bottom: 6px;
-}
-
-.filter-buttons .button {
-  padding: 14px 15px;
-  width: 160px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   height: 48px;
 }
 
 .button-view {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   color: #000000;
   background-color: #FFFFFF;
   padding: 14px 16px;
@@ -905,7 +909,7 @@ body {
 
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.control-input[type="radio"]:checked+.control-mark::before {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -916,7 +920,7 @@ body {
   content: "";
 }
 
-.control-input[type="checkbox"]:checked ~ .control-mark {
+.control-input[type="checkbox"]:checked~.control-mark {
   background-image: url("../images/tick/checkbox.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1054,12 +1058,42 @@ body {
   color: #000000;
   margin: 0;
   margin-right: 192px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .select-control {
   font-size: 18px;
   line-height: 21px;
   background-color: #FFFFFF;
+  width: 287px;
+  height: 48px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none;
+  background-image: url("../images/interface/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+.select-control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:focus {
+  border: 2px solid #68A2CA;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-list {
