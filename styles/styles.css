@@ -1172,6 +1172,14 @@ body {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  text-align: start;
+  width: 140px;
+  height: 48px;
+  border: 2px solid #E5E5E5;
+  appearance: none;
+  background-image: url("../images/interface/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
 }
 
 .pagination {
