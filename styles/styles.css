@@ -1391,7 +1391,7 @@ body {
 .tourists-number-form {
   display: grid;
   grid-template-columns: 133px 1fr 133px;
-  column-gap: 8px;
+  column-gap: 18px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -1414,6 +1414,7 @@ body {
 
 .children {
   text-align: right;
+  padding-top: 0;
 }
 
 .sign-button {
@@ -1476,5 +1477,26 @@ body {
 .button-search-modal:active {
   background-color: #68A2CA;
   color: rgba(255, 255, 255, 0.3);
+}
 
+.tooltip {}
+
+.tooltip-toggle {
+  position: relative;
+  top: -1px;
+  width: 25px;
+  height: 25px;
+  background-color: #83B3D3;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/interface/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
