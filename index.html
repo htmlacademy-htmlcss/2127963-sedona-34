@@ -204,23 +204,22 @@
   <div class="modal-container">
     <div class="modal modal-search">
 
-      <section class="modal-content">
+      <div class="modal-title-container">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-      </section>
-
-      <button class="modal-close-button" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
 
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="search-container arrival-form">
           <label class="search-parameter date arrival" for="arrival-date">Дата заезда:</label>
           <div class="date-form">
-          <input class="modal-field date-field" placeholder="27 апреля 2020" type="text" name="arrival-date"
-            id="arrival-date" required>
-          <button class="button modal-button date-button" type="button">
-            <span class="visually-hidden">Календарь</span>
-          </button>
+            <input class="modal-field date-field" placeholder="27 апреля 2020" type="text" name="arrival-date"
+              id="arrival-date" required>
+            <button class="button modal-button date-button" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
           </div>
           <p class="date-message date-message-error">Мы не можем отправить вас в прошлое.</p>
         </div>
@@ -228,12 +227,12 @@
         <div class="search-container departure-form">
           <label class="search-parameter date departure" for="departure-date">Дата выезда:</label>
           <div class="date-form">
-          <input class="modal-field date-field" placeholder="1 сентября 2021" type="text" name="departure-date"
-            id="departure-date" required>
-          <button class="button modal-button date-button" type="button">
-            <span class="visually-hidden">Календарь</span>
-          </button>
-        </div>
+            <input class="modal-field date-field" placeholder="1 сентября 2021" type="text" name="departure-date"
+              id="departure-date" required>
+            <button class="button modal-button date-button" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
+          </div>
           <p class="date-message">На эти даты есть свободные номера. Пока есть.</p>
         </div>
 
@@ -241,31 +240,55 @@
           <label class="search-parameter adults" for="adults-input">Взрослые:</label>
           <div class="tourists-number-form">
             <span class="select-number-form">
-          <button class="button modal-button minus" type="button">
-            <span class="visually-hidden">Минус</span>
-          </button>
-          <input class="modal-field number-input" type="number" value="2" name="adults-input" id="adults-input"
-            required>
-          <button class="button modal-button plus" type="button">
-            <span class="visually-hidden">Плюс</span>
-          </button>
-        </span>
+              <button class="button modal-button minus-plus-button" type="button">
+                <span class="visually-hidden">Минус</span>
+                <div class="sign-button">
+                  <svg class="sign-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0v1h13V0H0Z" />
+                  </svg>
+                </div>
+              </button>
+              <input class="modal-field number-input" type="number" value="2" name="adults-input" id="adults-input"
+                required>
+              <button class="button modal-button minus-plus-button" type="button">
+                <span class="visually-hidden">Плюс</span>
+                <div class="sign-button">
+                  <svg class="sign-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                  </svg>
+                </div>
+              </button>
+            </span>
 
-          <label class="search-parameter children" for="children-input">Дети:</label>
-          <span class="select-number-form">
-          <button class="button modal-button minus" type="button">
-            <span class="visually-hidden">Минус</span>
-          </button>
-          <input class="modal-field number-input" type="number" value="1" name="children-input" id="children-input">
-          <button class="button modal-button plus" type="button">
-            <span class="visually-hidden">Плюс</span>
-          </button>
+            <label class="search-parameter children" for="children-input">Дети:</label>
+            <span class="select-number-form">
+              <button class="button modal-button minus-plus-button" type="button">
+                <span class="visually-hidden">Минус</span>
+                <div class="sign-button">
+                  <svg class="sign-icon" aria-hidden="true" focusable="false" width="13" height="1" viewBox="0 0 13 1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0v1h13V0H0Z" />
+                  </svg>
+                </div>
+              </button>
+              <input class="modal-field number-input" type="number" value="1" name="children-input" id="children-input">
+              <button class="button modal-button minus-plus-button" type="button">
+                <span class="visually-hidden">Плюс</span>
+                <div class="sign-button">
+                  <svg class="sign-icon" aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 13 13"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" />
+                  </svg>
+                </div>
+              </button>
 
-        </span>
+            </span>
+          </div>
         </div>
-        </div>
 
-        <button class="button button-additional" type="submit">Найти</button>
+        <button class="button button-additional button-search-modal" type="submit">Найти</button>
 
       </form>
 

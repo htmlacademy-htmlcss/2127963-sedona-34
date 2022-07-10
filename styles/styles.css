@@ -1244,6 +1244,10 @@ body {
   border-radius: 30px;
 }
 
+.modal-title-container {
+  display: flex;
+}
+
 .modal-close-button {
   position: absolute;
   padding: 0;
@@ -1280,6 +1284,10 @@ body {
   grid-template-columns: 1fr 420px;
 }
 
+.search-container:last-of-type {
+  margin-bottom: 29px;
+}
+
 .date {
   grid-row: 1 / 3;
 }
@@ -1289,8 +1297,8 @@ body {
   grid-template-columns: 1fr 53px;
   border-radius: 4px;
   font-size: 18px;
-line-height: 21px;
-color: #000000;
+  line-height: 21px;
+  color: #000000;
 }
 
 .date-form:focus {
@@ -1298,14 +1306,14 @@ color: #000000;
 }
 
 .date-form:active {
-  outline: 2px solid #000000;;
+  outline: 2px solid #000000;
 }
 
 .search-parameter {
   font-weight: 700;
   text-transform: capitalize;
   color: #000000;
-  padding-top: 15px;
+  padding-top: 14px;
 }
 
 .modal-field {
@@ -1313,9 +1321,11 @@ color: #000000;
   border: none;
   background-color: #F2F2F2;
   border-radius: 4px;
-  font-size: 18px;
-line-height: 21px;
-color: #000000;
+  color: #000000;
+}
+
+.date-field {
+  border-radius: 4px 0 0 4px;
 }
 
 .select-number-form .modal-field {
@@ -1328,7 +1338,8 @@ color: #000000;
 
 .modal-button {
   background-color: #F2F2F2;
-  padding: 18px 19px 17px;
+  width: 53px;
+  height: 50px;
 }
 
 .date-button {
@@ -1337,6 +1348,8 @@ color: #000000;
   background-position: center;
   width: 53px;
   height: 50px;
+  padding: 18px 19px 17px;
+  border-radius: 0 4px 4px 0;
 }
 
 .modal-field::placeholder {
@@ -1361,6 +1374,8 @@ color: #000000;
   display: grid;
   grid-template-columns: 133px 1fr 133px;
   column-gap: 8px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .select-number-form {
@@ -1381,4 +1396,52 @@ color: #000000;
 
 .children {
   text-align: right;
+}
+
+.sign-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 4px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+}
+
+.minus-plus-button {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.sign-icon {
+  opacity: 0.3;
+}
+
+.minus-plus-button:hover .sign-icon {
+  opacity: 1;
+}
+
+.minus-plus-button:focus .sign-icon {
+  opacity: 1;
+}
+
+.minus-plus-button:focus .sign-button {
+  outline: 3px solid #83B3D3;
+}
+
+.minus-plus-button:active .sign-icon {
+  opacity: 0.2;
+}
+
+.button-search-modal {
+  font-size: 20px;
+  line-height: 36px;
+  border-radius: 10px;
+  background-color: #83B3D3;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
