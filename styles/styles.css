@@ -21,6 +21,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  min-width: 1280px;
   min-height: 100%;
   margin: 0;
   font-family: "PT Sans", sans-serif;
@@ -150,7 +151,6 @@ body {
   padding-bottom: 12px;
   border-radius: 0 10px 10px 0;
   width: 200px;
-  height: 60px;
 }
 
 .filter-buttons .button {
@@ -162,7 +162,6 @@ body {
   text-transform: none;
   background-color: transparent;
   color: #FFFFFF;
-  height: 37px;
   padding-top: 4px;
   padding-bottom: 5px;
 }
@@ -173,7 +172,7 @@ body {
 }
 
 .button-reset:focus {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .button-reset:active {
@@ -185,7 +184,6 @@ body {
   margin-bottom: 6px;
   padding-top: 14px;
   padding-bottom: 14px;
-  height: 48px;
 }
 
 .button-view {
@@ -606,7 +604,6 @@ body {
 .field {
   box-sizing: border-box;
   width: 600px;
-  height: 60px;
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
@@ -626,13 +623,12 @@ body {
 
 .field:focus {
   background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
-
+  outline: 3px solid #83B3D3;
 }
 
 .field:active {
   background-color: #FFFFFF;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
   color: #000000;
 }
 
@@ -1075,7 +1071,7 @@ body {
   background-color: #FFFFFF;
   width: 287px;
   height: 48px;
-  padding-right: 15px;
+  padding-right: 45px;
   padding-left: 15px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -1180,6 +1176,7 @@ body {
   text-align: start;
   width: 140px;
   height: 48px;
+  padding-right: 40px;
   border: 2px solid #E5E5E5;
   appearance: none;
   background-image: url("../images/interface/arrow.svg");
