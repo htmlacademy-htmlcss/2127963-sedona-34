@@ -141,7 +141,6 @@ body {
   margin: 0 auto;
   padding-top: 12px;
   padding-bottom: 12px;
-
 }
 
 .button-newsletter {
@@ -1153,10 +1152,8 @@ body {
 }
 
 .hotel-card-link {
-
   color: #000000;
   text-decoration: none;
-
 }
 
 .hotel-card-title {
@@ -1237,6 +1234,10 @@ body {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 2;
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .modal {
