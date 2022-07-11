@@ -1391,7 +1391,6 @@ body {
 .tourists-number-form {
   display: grid;
   grid-template-columns: 133px 1fr 133px;
-  column-gap: 9px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -1415,6 +1414,7 @@ body {
 .children {
   text-align: right;
   padding-top: 0;
+  margin-right: 43px;
 }
 
 .sign-button {
@@ -1480,7 +1480,8 @@ body {
 }
 
 .tooltip {
-  padding: 9px;
+  position: absolute;
+  right: 14px;
 }
 
 .tooltip-toggle {
@@ -1495,11 +1496,53 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-
 }
 
 .form-label {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: right;
+}
+
+.tooltip-toggle:hover,
+.tooltip-toggle:focus,
+.tooltip-toggle:active {
+  background-color: #68A2CA;
+}
+
+.tooltip-text {
+  position: absolute;
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: left;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  display: block;
+  width: 216px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 42px;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content:"";
+  background-image: url("../images/interface/triangle.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
 }
