@@ -343,7 +343,7 @@ body {
 .navigation-search .navigation-link:not(.button):hover,
 .navigation-search .navigation-link:not(.button):focus,
 .navigation-search .navigation-link:not(.button):active {
-border: 2px solid #756157;
+  border: 2px solid #756157;
 }
 
 .navigation-item-search .navigation-link {
