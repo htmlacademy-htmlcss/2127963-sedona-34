@@ -290,6 +290,7 @@ body {
   padding: 20px 17px 19px;
   font-weight: 700;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .navigation-link:not(.button-basic) {
@@ -306,9 +307,19 @@ body {
   content: "";
 }
 
+.navigation-link:not(.button):visited {
+  color: #3F5E72;
+}
+
+.navigation-link:not(.button):hover,
+.navigation-link:not(.button):focus,
+.navigation-link:not(.button):active {
+  color: #615048;
+}
+
 .navigation-item .button-basic {
   min-width: 160px;
-  max-width: 200px;
+  max-width: 190px;
   padding: 9px 15px 8px;
 }
 
@@ -327,6 +338,12 @@ body {
   background-size: 18px 18px;
   padding: 24px 12px;
   box-sizing: border-box;
+}
+
+.navigation-search .navigation-link:not(.button):hover,
+.navigation-search .navigation-link:not(.button):focus,
+.navigation-search .navigation-link:not(.button):active {
+border: 2px solid #756157;
 }
 
 .navigation-item-search .navigation-link {
@@ -617,6 +634,7 @@ body {
 }
 
 .field::placeholder {
+  font-family: "PT Sans";
   color: #000000;
   opacity: 0.6;
 }
@@ -1201,6 +1219,7 @@ body {
 
 .hotels-amount-form {
   display: flex;
+  align-items: center;
   min-width: 386px;
   max-width: 420px;
   font-size: 18px;
@@ -1208,6 +1227,7 @@ body {
 }
 
 .hotels-amount {
+  margin: 0;
   padding-right: 15px;
 }
 
