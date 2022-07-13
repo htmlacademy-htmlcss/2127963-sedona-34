@@ -294,6 +294,14 @@ body {
   box-sizing: border-box;
 }
 
+.logo-link {
+  position: relative;
+  padding: 0;
+  margin-right: 30px;
+  margin-bottom: -5px;
+  z-index: 1;
+}
+
 .navigation-link:not(.button-basic) {
   color: #000000;
 }
@@ -383,7 +391,7 @@ body {
 }
 
 .page-header-logo {
-  margin-right: 30px;
+  position: relative;
   margin-bottom: -5px;
   z-index: 1;
 }
@@ -452,9 +460,7 @@ body {
 
 .advantages-items {
   width: 230px;
-  margin: 0 auto;
   padding: 103px 85px 102px;
-
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -956,7 +962,7 @@ body {
   content: "";
 }
 
-.control-input[type="checkbox"]:checked ~ .control-mark {
+.control-input[type="checkbox"]:checked~.control-mark {
   background-image: url("../images/tick/checkbox.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1010,13 +1016,33 @@ body {
 
 
 .range-wrapper-inputs {
+  position: relative;
   display: grid;
   grid-template-columns: 143px 144px;
   margin-bottom: 28px;
   border-radius: 4px;
 }
 
+.range-min-text {
+  position: absolute;
+  left: 112px;
+  top: 14px;
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 0.3;
+}
+
+.range-max-text {
+  position: absolute;
+  left: 250px;
+  top: 14px;
+  font-size: 18px;
+  line-height: 21px;
+  opacity: 0.3;
+}
+
 .range-input {
+  position: relative;
   color: #FFFFFF;
   background-color: transparent;
   -moz-appearance: textfield;
@@ -1113,7 +1139,7 @@ body {
   width: 287px;
   margin-right: 8px;
   padding: 10px 45px 10px 14px;
- /*padding-right: 45px;
+  /*padding-right: 45px;
   padding-left: 14px;*/
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -1307,7 +1333,7 @@ body {
 }
 
 .modal-container-close {
-  /*display: none;*/
+  display: none;
 }
 
 .modal {
@@ -1413,7 +1439,7 @@ body {
   border-radius: 4px;
   font-family: "PT Sans";
   font-size: 18px;
-line-height: 21px;
+  line-height: 21px;
   color: #000000;
 }
 
