@@ -318,8 +318,7 @@ body {
 }
 
 .navigation-item .button-basic {
-  min-width: 160px;
-  max-width: 190px;
+  width: 160px;
   padding: 9px 15px 8px;
 }
 
@@ -356,6 +355,7 @@ body {
 
 .navigation-item-favourite {
   position: relative;
+  margin-right: 1px;
 }
 
 .navigation-item-favourite .navigation-link::after {
@@ -627,6 +627,7 @@ body {
 .field {
   box-sizing: border-box;
   width: 600px;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
   background-color: #F2F2F2;
@@ -1020,14 +1021,11 @@ body {
   -moz-appearance: textfield;
   padding: 14px 19px 13px;
   height: 48px;
-  box-sizing: border-box;
-  border: 2px solid #FFFFFF;
-}
-
-.range-input::placeholder {
   font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
+  box-sizing: border-box;
+  border: 2px solid #FFFFFF;
 }
 
 .range-input:first-of-type {
@@ -1111,6 +1109,7 @@ body {
   line-height: 21px;
   background-color: #FFFFFF;
   width: 287px;
+  margin-right: 8px;
   padding-right: 45px;
   padding-left: 14px;
   border: 2px solid #E5E5E5;
@@ -1305,7 +1304,7 @@ body {
 }
 
 .modal-container-close {
-  display: none;
+  /*display: none;*/
 }
 
 .modal {
@@ -1404,11 +1403,14 @@ body {
 }
 
 .modal-field {
-  padding: 15px 19px 14px;
+  padding-left: 19px;
+  padding-right: 19px;
   border: none;
   background-color: #F2F2F2;
   border-radius: 4px;
   font-family: "PT Sans";
+  font-size: 18px;
+line-height: 21px;
   color: #000000;
 }
 
@@ -1441,6 +1443,7 @@ body {
 }
 
 .modal-field::placeholder {
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -1475,6 +1478,10 @@ body {
   text-align: center;
 }
 
+.number-input.modal-field {
+  border-radius: 0;
+}
+
 .number-input::-webkit-outer-spin-button,
 .number-input::-webkit-inner-spin-button {
   appearance: none;
@@ -1498,30 +1505,43 @@ body {
   box-sizing: border-box;
 }
 
-.minus-plus-button {
+.minus-button,
+.plus-button {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0;
+}
+
+.minus-button {
+  border-radius: 4px 0 0 4px;
+}
+
+.plus-button {
+  border-radius: 0 4px 4px 0;
 }
 
 .sign-icon {
   opacity: 0.3;
 }
 
-.minus-plus-button:hover .sign-icon {
+.minus-button:hover .sign-icon,
+.plus-button:hover .sign-icon {
   opacity: 1;
 }
 
-.minus-plus-button:focus .sign-icon {
+.minus-button:focus .sign-icon,
+.plus-button:focus .sign-icon {
   opacity: 1;
 }
 
-.minus-plus-button:focus .sign-button {
+.minus-button:focus .sign-button,
+.plus-button:focus .sign-button {
   outline: 3px solid #83B3D3;
 }
 
-.minus-plus-button:active .sign-icon {
+.minus-button:active .sign-icon,
+.plus-button:active .sign-icon {
   opacity: 0.2;
 }
 
