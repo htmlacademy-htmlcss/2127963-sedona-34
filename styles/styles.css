@@ -673,8 +673,8 @@ body {
   flex-wrap: wrap;
   width: 1060px;
   margin: 0 auto;
-  padding: 45px 71px 35px 70px;
-  align-items: center;
+  padding: 45px 70px 28px 70px;
+  /*align-items: center;*/
 }
 
 .footer-social {
