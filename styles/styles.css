@@ -400,7 +400,7 @@ body {
   color: #000000;
   background-image: url("../images/welcome/welcome_divider.svg"), url("../images/welcome/welcome_background.jpg");
   width: 1200px;
-  background-size: cover;
+  background-size: contain, cover;
   background-position: bottom, 0 0;
   background-repeat: no-repeat;
   background-color: rgba(131, 179, 211, 0.12);
